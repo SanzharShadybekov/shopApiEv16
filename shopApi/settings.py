@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # inst apps
+    'rest_framework',
+
+    # my apps
     'product',
     'order',
     'account',
@@ -80,7 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'shopapi_db',
-        'USER': 'atai',
+        'USER': 'sanzhar',
         'PASSWORD': 1,
         'HOST': 'localhost',
         'PORT': 5432

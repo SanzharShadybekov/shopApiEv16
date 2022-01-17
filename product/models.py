@@ -37,7 +37,6 @@ class ProductReview(CreatedAtModel):
     author = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name='reviews', null=True)
 
-
     text = models.TextField()
     rating = models.PositiveIntegerField(default=1)
 
@@ -47,3 +46,11 @@ class ProductReview(CreatedAtModel):
 # review = ProductReview(product='Iphone', title='Super telefon')
 #
 # product1 = product.review.title
+
+
+
+# GET /book/ — получить список всех книг
+# GET /book/3/ — получить книгу номер 3
+# POST /book/ — добавить книгу (данные в теле запроса)
+# PUT /book/3 – изменить книгу (данные в теле запроса)
+# DELETE /book/3 – удалить книгу
